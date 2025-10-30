@@ -778,9 +778,9 @@ Beyond the proposal outlined above, the following were also considered:
    This strategy would also make unpacking in synchronous and asynchronous
    generators behave symmetrically, but it would also be more complex, enough
    so that the cost may not be worth the benefit.  As such, this PEP proposes
-   that generator expressions using the unpacking operator should not use
-   semantics similar to ``yield from`` until ``yield from`` is supported in
-   asynchronous generators more generally.
+   that asynchronous generator expressions using the unpacking operator should
+   not use semantics similar to ``yield from`` until ``yield from`` is
+   supported in asynchronous generators more generally.
 
 3. Using ``yield from`` for unpacking in synchronous generator expressions, and
    disallowing unpacking in asynchronous generator expressions until they
